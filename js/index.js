@@ -46,4 +46,8 @@ bodyListener.addEventListener('wheel', () =>
 
 //makes 'Fun Bus' HUGE!
 const funBus = document.querySelector('header div h1')
-console.log(funBus);
+const windowListener = document.querySelector('window');
+windowListener.addEventListener('resize', () => 
+{
+    console.log('resize fired');
+})
