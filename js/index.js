@@ -110,4 +110,8 @@ divs.forEach((element) =>
         event.target.style.backgroundColor = 'white';
     })
 })
-//doesn't allow rebeccapurple to be applied to a specific div
+//prevents default refresh of nav home nav anchor
+navItemHome.addEventListener('click', (event) => 
+{
+    event.preventDefault();
+})
